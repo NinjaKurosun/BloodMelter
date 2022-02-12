@@ -6,7 +6,7 @@
  - [Warning](#Warning)
  - [Compiling and Run](#Compiling-and-Run)
 
- ## Preview
+ ## Preview(no loop, sorry)
  ![Gif](Gif/BloodMelter.gif)
  
  ## About
