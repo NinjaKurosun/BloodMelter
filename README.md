@@ -1,10 +1,11 @@
 # BloodMelter
-
+ This is no malware, This is no virus. This is a very small effect of small blood for small PC of small size.
 ## Table Of Contents
  - [Preview](#Preview)
  - [About](#About)
  - [Warning](#Warning)
  - [Compiling and Run](#Compiling-and-Run)
+ - [End](#End)
 
  ## Preview(no loop, sorry)
  ![Gif](Gif/BloodMelter.gif)
@@ -22,3 +23,6 @@
   1. Download the source files and open `BloodMelter.sln` in the `Visual Studio`.
   2. Press `Ctrl+f5`.
   3. Relax and Look at the first blood.
+
+## End
+> Thank you for check out this.
