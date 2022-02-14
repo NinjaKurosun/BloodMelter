@@ -17,17 +17,12 @@ public:
 
 extern Random64 random;
 
-inline uint64 randomFocusedOnZero(const uint64& seed)
+inline uint64 randomFocusedOnZero(const uint64 &seed, const double &stretch = 1)
 {
-    return random(0, seed) / random(1, seed / 2);
+    return random(0, seed * stretch) / random(1, seed / 2);
 }
 
-inline uint64 randomFocusedOnZeroPlus(const uint64& seed)
-{
-    return random(0, seed * 100) / random(1, seed / 2);
-}
-
-inline uint64 randomFocusedOnCenter(const uint64& seed)
+inline uint64 randomFocusedOnCenter(const uint64 &seed)
 {
     return random(0, seed / 2) + random(0, seed / 2);
 }

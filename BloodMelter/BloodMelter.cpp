@@ -18,7 +18,8 @@ const HBRUSH br[COUNT_BRUSH]
 	CreateSolidBrush(0x000000A8), CreateSolidBrush(0x0000008A)
 };
 
-HWND CreateMaskWindow(const WNDCLASS& wndClass, const HINSTANCE& hInstance);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+HWND CreateMaskWindow(const WNDCLASS &wndClass, const HINSTANCE &hInstance);
 LRESULT CALLBACK BlobProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam);
 LRESULT CALLBACK BloodProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam);
 
@@ -70,19 +71,21 @@ LRESULT CALLBACK BlobProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam)
 
 			uint16_t posH[count];
 			uint16_t posW[count];
-			uint8_t size = random(0, 8 /2 ) + random(0, 8 / 2);
+			uint8_t size = randomFocusedOnCenter(8);
 
-			posH[0] = randomFocusedOnZeroPlus(ScreenHeight);
-			posW[0] = randomFocusedOnZeroPlus(ScreenWidth);
+			const uint8_t stretch = 100;
 
-			posH[1] = randomFocusedOnZeroPlus(ScreenHeight);
-			posW[1] = ScreenWidth - randomFocusedOnZeroPlus(ScreenWidth);
+			posH[0] = randomFocusedOnZero(ScreenHeight, stretch);
+			posW[0] = randomFocusedOnZero(ScreenWidth, stretch);
 
-			posH[2] = ScreenHeight - randomFocusedOnZeroPlus(ScreenHeight);
-			posW[2] = ScreenWidth  - randomFocusedOnZeroPlus(ScreenWidth);
+			posH[1] = randomFocusedOnZero(ScreenHeight, stretch);
+			posW[1] = ScreenWidth - randomFocusedOnZero(ScreenWidth, stretch);
 
-			posH[3] = ScreenHeight - randomFocusedOnZeroPlus(ScreenHeight);
-			posW[3] = randomFocusedOnZeroPlus(ScreenWidth);
+			posH[2] = ScreenHeight - randomFocusedOnZero(ScreenHeight, stretch);
+			posW[2] = ScreenWidth  - randomFocusedOnZero(ScreenWidth, stretch);
+
+			posH[3] = ScreenHeight - randomFocusedOnZero(ScreenHeight, stretch);
+			posW[3] = randomFocusedOnZero(ScreenWidth, stretch);
 
 			
 
