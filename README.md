@@ -25,4 +25,4 @@
   3. Relax and Look at the first blood.
 
 ## End
-> Thank you for check out this.
+> Thank you for visiting!.
