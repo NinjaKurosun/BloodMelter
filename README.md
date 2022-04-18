@@ -1,5 +1,5 @@
 # BloodMelter
- This is no malware, This is no virus. This is a very small effect of very small blood for a some PC.
+ This is no malware, This is no virus. This is a very small effect of very small blood for a PC.
 ## Table Of Contents
  - [Preview](#Preview)
  - [About](#About)
