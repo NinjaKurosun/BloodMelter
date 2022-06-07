@@ -29,10 +29,11 @@ uint64 Random64::operator()(uint64 min, uint64 max)
 
 uint64 Random64::randomFocusedOnZero(const uint64& min, const uint64& max, const double& stretch/*= 1*/)
 {
-    return (uint64)(((*this)() % X * stretch) / ((*this)() % (X / 2))) % (max - min) + min;
+    return (uint64)(((*this)() % X * stretch) / ((*this)() % (X / 2))) % (max - min) + min;//it was written with the help of neuroleptics :)
 }
 
 uint64 Random64::randomFocusedOnCenter(const uint64& min, const uint64& max)
 {
-    return ((*this)() % (max / 2) + (*this)() % (max / 2)) + min;
+    const uint64 minMax = (max - min);
+    return ((*this)() % (minMax / 2) + (*this)() % (minMax / 2)) + min;
 }
