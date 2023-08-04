@@ -24,7 +24,7 @@
   2. Press `Ctrl+f5`.
   3. Relax and Look at the first blood.
 
-## Help me
+## Share money
 > BTC bc1qukgsdjarrwuwx7szmduvj0mzkhh4k97aq7salx
 
 ## End
