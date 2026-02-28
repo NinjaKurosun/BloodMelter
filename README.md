@@ -23,9 +23,3 @@
   1. Download the source files and open `BloodMelter.sln` in the `Visual Studio`.
   2. Press `Ctrl+f5`.
   3. Relax and Look at the first blood.
-
-## Share money
-> BTC bc1qukgsdjarrwuwx7szmduvj0mzkhh4k97aq7salx
-
-## End
-> Thank you for visiting!.
